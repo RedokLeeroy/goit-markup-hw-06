@@ -99,7 +99,7 @@ body {
     text-decoration: none;
     transition-property: box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-link:hover,
@@ -134,10 +134,11 @@ body {
 }
 
 
-.current{
+.current {
     position: relative;
 }
-.current::after{
+
+.current::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -147,8 +148,8 @@ body {
     height: 4px;
     border-radius: 2px;
     background-color: var(--brand-color-blue);
-    
-} 
+
+}
 
 .navigation-mar {
     margin-right: 50px;
@@ -271,11 +272,11 @@ body {
     display: block;
 }
 
-.image-desc{
+.image-desc {
     position: relative;
 }
 
-.image-display-desription{
+.image-display-desription {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -287,7 +288,7 @@ body {
     justify-content: center;
 }
 
-.image-description{
+.image-description {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -661,6 +662,9 @@ body {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-close-btn {
@@ -678,12 +682,24 @@ body {
     cursor: pointer;
 }
 
-.image-wrapper{
+.close-icon {
+    fill: var(--brand-color-black);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+    fill: var(--brand-color-blue);
+}
+
+.image-wrapper {
     position: relative;
     overflow: hidden;
 }
 
-.product-descr{
+.product-descr {
     position: absolute;
     top: 0;
     left: 0;
@@ -709,6 +725,77 @@ body {
     transform: translateY(0);
 }
 
+.modal-message {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--brand-color-gray);
+    margin-bottom: 4px;
+}
+
+.form-input {
+    min-height: 40px;
+    padding: 12px 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--brand-color-blue);
+
+}
+
+.input-icon {
+    position: absolute;
+    top: 31px;
+    left: 12px;
+}
+
+.form-coments {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    height: 120px;
+    margin-bottom: 20px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-coments:hover,
+.form-coments-focus {
+    border-color: var(--brand-color-blue);
+}
+
+.form-coments::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
 
 .blue {
     color: var(--brand-color-blue);
