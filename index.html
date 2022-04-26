@@ -505,6 +505,16 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-container">
+          <p class="social-paragraph">подпишитесь на рассылку</p>
+          <div class="flex">
+            <input class="footer-form" type="email" name="email" placeholder="E-mail">
+            <button class="footer-form-button">Подписаться
+              <svg width="24" height="24" class="footer-button-icon">
+              <use href="/images/icons/symbol-defs.svg#icon-icon-send"></use>
+            </svg></button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop" data-modal>
@@ -538,6 +548,18 @@
           <span class="input-name">Коментарии</span>
           <textarea name="coments" cols="10" rows="10" class="form-coments" placeholder="Введите текст"></textarea>
         </label>
+        <label class="agreement">
+          <input class="agreement-checkbox visually-hidden" type="checkbox" aria-hidden="true"  tabindex="-1">
+          <span class="custom-checkbox" role="checkbox" tabindex="0">
+            <svg width="11" height="8" class="custom-checkbox-icon">
+              <use href="/images/icons/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </span>
+          <span class="agreement-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="/">Условия договора</a></span>
+        </label>
+        <button class="submit-button">
+          Отправить
+        </button>
       </form>
     </div>
     <script src="./js/modal.js"></script>
